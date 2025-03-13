@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mouse-trail"></div>
+
+    <section id="presentation" class="qui-suis-je">
+      <div class="container">
+        <div class="text-section">
+          <h2>Who am I ?</h2>
+          <p>
+            Passionate about data analysis and data science, I have developed strong expertise in Big Data engineering. I am skilled in collecting, cleaning, transforming, and analyzing large datasets to extract valuable insights.
+          </p>
+          <!-- Bouton LinkedIn -->
+          <a href="https://www.linkedin.com/in/salwane-alao" target="_blank" class="linkedin-button">
+            View my LinkedIn
+          </a>
+          <!-- Bouton Télécharger CV -->
+          <a href="https://drive.google.com/uc?export=download&id=ID_DU_FICHIER" 
+             class="cv-button" download>
+             Download my CV
+          </a>
+        </div>
+        <div class="image-section">
+          <img src="assets/Photo.jpg" alt="Ma photo" />
+        </div>
+      </div>
+    </section>
+    
+  <!-- Section 2 : Moi -->
+  <section id="parcours">
+    <h2>My Animated Journey</h2>
+    <div class="timeline">
+  
+      <!-- Bloc 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content" onmouseover="showHistogram('chart1')" onmouseout="hideHistogram('chart1')">
+          <h3>Data Analyst Apprentice - GRDF (France)</h3>
+          <p>Data Analyst at a gas company. 📅 September 2023 - September 2025</p>
+          <div class="chart-container" id="chart1">
+            <canvas></canvas>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Bloc 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content" onmouseover="showHistogram('chart2')" onmouseout="hideHistogram('chart2')">
+          <h3>Environmental Data Analysis Intern (Austria)</h3>
+          <p>Monitoring greenhouse gas emissions. 📅 July 2024 - October 2024</p>
+          <div class="chart-container" id="chart2">
+            <canvas></canvas>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Bloc 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content" onmouseover="showHistogram('chart3')" onmouseout="hideHistogram('chart3')">
+          <h3>IT Infrastructure Management Intern (Benin)</h3>
+          <p>Optimization and management of 100 machines. 📅 August 2022</p>
+          <div class="chart-container" id="chart3">
+            <canvas></canvas>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Bloc 4 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content" onmouseover="showHistogram('chart4')" onmouseout="hideHistogram('chart4')">
+          <h3>PING Project(France)</h3>
+          <p>Medical management application for Sub-Saharan Africa. 📅 Pilot Country: Benin</p>
+          <div class="chart-container" id="chart4">
+            <canvas></canvas>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/parcours.js"></script>
+  
+
+  <section id="skills">
+    <h2>My Skills 🚀</h2>
+    <div class="skills-carousel">
+      <div class="skills-track" id="skillsTrack"></div>
+    </div>
+  </section>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/skills.js" defer></script>
+  
+  
+  <section id="realisations" class="realisations">
+    <h2>My Achievements 🚀</h2>
+    <div class="grid-container">
+      <!-- Réalisation 1 -->
+      <div class="grid-item">
+        <img src="assets/projet1.jpg" alt="Réalisation 1">
+        <div class="overlay">
+          <h3>Project 1</h3>
+          <p>Environmental Data Analysis
+
+            Monitoring greenhouse gas emissions from agricultural soils.</p>
+        </div>
+      </div>
+  
+      <!-- Réalisation 2 -->
+      <div class="grid-item">
+        <img src="assets/projet2.jpg" alt="Réalisation 2">
+        <div class="overlay">
+          <h3>Project 2</h3>
+          <p>My First Dashboard Created with Tableau</p>
+        </div>
+      </div>
+  
+      <!-- Réalisation 3 -->
+      <div class="grid-item">
+        <img src="assets/projet3.jpg" alt="Réalisation 3">
+        <div class="overlay">
+          <h3>Project 3</h3>
+          <p>Introduction to QGIS
+
+            This project, although simple in essence, involved using a database (departments, regions, etc.) about France from GADM (2021) to process and layout the data in order to create a clear and informative map of France. The results highlight the originality and efficiency of the tool used.</p>
+        </div>
+      </div>
+  
+      <!-- Réalisation 4 -->
+      <div class="grid-item">
+        <img src="assets/projet4.jpg" alt="Réalisation 4">
+        <div class="overlay">
+          <h3>Project 4</h3>
+          <p>ArcGis Map</p>
+        </div>
+      </div>
+  
+      <!-- Réalisation 5 -->
+      <div class="grid-item">
+        <img src="assets/projet5.jpg" alt="Réalisation 5">
+        <div class="overlay">
+          <h3>Project 5</h3>
+          <p>Development of Application </p>
+        </div>
+      </div>
+  
+      <!-- Réalisation 6 -->
+      <div class="grid-item">
+        <img src="assets/projet6.jpg" alt="Réalisation 6">
+        <div class="overlay">
+          <h3>Project 6</h3>
+          <p>Cloud Deployment for Microservices</p>
+        </div>
+      </div>
+  
+      <!-- Réalisation 7 -->
+      <div class="grid-item">
+        <img src="assets/projet7.jpg" alt="Réalisation 7">
+        <div class="overlay">
+          <h3>Project 7</h3>
+          <p>WebScraping</p>
+        </div>
+      </div>
+  </section>
+  
+    
+    <!-- Section Langues -->
+    <section id="langues" class="langues-section">
+      <h2>Language 🌍</h2>
+      <div class="langues-container">
+        <!-- Français -->
+        <div class="langue-item">
+          <img src="assets/france.png" alt="Français" class="drapeau">
+          <div class="details">
+            <h3>French</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Anglais -->
+        <div class="langue-item">
+          <img src="assets/uk.png" alt="Anglais" class="drapeau">
+          <div class="details">
+            <h3>English</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;"></div>
+            </div>
+            <a href="https://www.etsglobal.org/fr/en/digital-score-report/F52F1F6398C5E176AC5C315AB1EF063A5F2568AA85AD8C6281F8971C0D62A500TUFqajdlTVBTLzZGdmpqZGhtZEx2RkM0Vy9VQmkyWkVoYWQrMGlkY2kyVUFGUjZX"
+               target="_blank" class="btn-score">View the score</a>
+          </div>
+        </div>
+    
+        <!-- Espagnol -->
+        <div class="langue-item">
+          <img src="assets/spain.png" alt="Espagnol" class="drapeau">
+          <div class="details">
+            <h3>Spanish</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <section>
+    <!-- Section Certifications -->
+    <div class="certifications">
+      <h3>Certifications</h3>
+      <div class="certif-container">
+        <a href="https://www.udemy.com/certificate/UC-d710462a-0691-4bb4-a82b-6d707aa12719/" 
+           target="_blank" class="certif-card">
+          <h4>Certification Udemy</h4>
+          <p>Power BI</p>
+        </a>
+        <a href="https://media.licdn.com/dms/document/media/v2/D4E2DAQGHeOXlbNrf_Q/profile-treasury-document-pdf-analyzed/B4EZU8GU.0H0Ac-/0/1740470049855?e=1743033600&v=beta&t=LxFkR00ALARZU8Nl1LHhw6Y3UqUvHhM2QxpmpXbhJxs" target="_blank" class="certif-card">
+          <h4>Certification Udemy</h4>
+          <p>Fundamentals of Data Analysis and Machine Learning</p>
+        </a>
+        <a href="https://media.licdn.com/dms/document/media/v2/D4E2DAQE-SHlgpKpIjQ/profile-treasury-document-pdf-analyzed/profile-treasury-document-pdf-analyzed/0/1714038044229?e=1743033600&v=beta&t=GLvZBzmKLpo54sbkTazoDThIJxxj2QTB_xKMdKmNwY0" target="_blank" class="certif-card">
+          <h4>Certification Google</h4>
+          <p>Google Analytics</p>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="voyages" class="voyages-section">
+    <h2>My Trips 🌍</h2>
+    <div id="map" style="width: 60%; height: 500px; margin-top: 20px;"></div>
+  </section>
+  
+  <!-- Leaflet.js CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="scripts/map.js"></script>
+  
+  <section id="hobbies" class="hobbies-section">
+    <h2>My Hobbies 🌟</h2>
+    <div class="hobbies-container">
+      <!-- Musculation -->
+      <div class="hobby-bubble" data-text="Progresser en musculation et repousser mes limites.">
+        <i class="fas fa-dumbbell"></i>
+      </div>
+  
+      <!-- Gaming -->
+      <div class="hobby-bubble" data-text="Improve in weight training and push my limits.">
+        <i class="fas fa-gamepad"></i>
+      </div>
+  
+      <!-- Nature -->
+      <div class="hobby-bubble" data-text="Enjoy the beauty of nature and hiking.">
+        <i class="fas fa-tree"></i>
+      </div>
+  
+      <!-- Lecture -->
+      <div class="hobby-bubble" data-text="Read books to expand my knowledge.">
+        <i class="fas fa-book"></i>
+      </div>
+  
+      <!-- Cuisine -->
+      <div class="hobby-bubble" data-text="Experiment with new recipes in cooking.">
+        <i class="fas fa-utensils"></i>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  
+
+  <!-- Scripts -->
+  <script type="module" src="scripts/sphere.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="scripts/parcours.js"></script>
+  <script src="scripts/globe.js"></script>
+  <script src="scripts/skills.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/stats.js"></script>
+  <script src="scripts/futur.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+  <script src="scripts/galerie.js"></script>
+  <script src="scripts/poissons.js"></script>
+  <script src="scripts/mouseEffect.js"></script>
+</body>
+</html>
